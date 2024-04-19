@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" href="./images/star-fruit_8932955.icon">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: open Arial, Helvetica, sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        /* الناف بار */
+        header {
+            background-color: #269ad8;
+            width: 100%;
+            position: fixed;
+            z-index: 999;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px 200px;
+            border-bottom: solid 4px #ffc600;
+        }
+        
+        .namelogo {
+            text-decoration: none;
+            text-transform: uppercase;
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 1.8em;
+        }
+        
+        .namelogo span {
+            color: #ffc600;
+        }
+        
+        .navigation a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1.1em;
+            font-weight: 500;
+            padding-left: 30px;
+            transition: .2s;
+            text-transform: uppercase;
+        }
+        
+        .navigation a:hover {
+            color: #ffc600;
+        }
+        
+        
+        /* الصوره في اول سكشن*/
+        section {
+            padding: 30px 10px;
+        }
+        
+        .main {
+            width: 100%;
+            min-height: 43vh;
+            display: flex;
+            align-items: center;
+            background: url(./images/nav2.jpg) no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .namefoto {
+            display: flex;
+            justify-content: end;
+        }
+        
+        .main h2 {
+            color: #FFFFFF;
+            font-weight: 700;
+            font-size: 34px;
+            margin-bottom: 15px;
+            margin-left: 30%;
+            text-shadow: 3px 5px 5.82px rgba(0, 0, 0, .16);
+        }
+        
+        /* الصور اللى في الموقع كامل */
+        .image {
+            margin-bottom: 5px;
+        }
+        
+        /* المدن الصفحه */
+        
+        
+        .title2 {
+            display: flex;
+            justify-content: center;
+            color: #ef9fa4;
+            font-size: 25px;
+        }
+        
+        .cards {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        
+        .content2 {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+        
+        /* المدن */
+        .project-city .content2 {
+            margin-top: 30px;
+        }
+        
+        .project-city .project-card {
+            background-color: #FFFFFF;
+            border: 1px solid rgba(196, 210, 220, .7);
+            -webkit-box-shadow: 2px 3px 3px 0 rgba(0, 0, 0, .03);
+            min-height: 14em;
+            width: 23em;
+            overflow: hidden;
+            border-radius: 3px;
+            margin: 10px;
+            transition: 0.7s ease;
+        }
+        
+        
+        
+        
+        
+        .pro-image img {
+            width: 100%;
+        }
+        
+        .information {
+            padding: 1em;
+        }
+        
+        .info_cat .namecity {
+            color: red;
+            font-weight: bold;
+        }
+        
+        .project-tittle {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        
+        .project-tittle span {
+            color: gold;
+        }
+        
+        .more-detel {
+            text-decoration: none;
+            color: #3a6cf4;
+        }
+        
+        /* footer */
+.foot {
+    background: url(./images/navfoto.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.footer {
+    height: 66vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: 5px solid #ffc600;
+}
+
+.about ul li {
+    list-style: none;
+    padding: 5px;
+
+}
+
+.about ul li a {
+    text-decoration: none;
+    color: #0e5778;
+    
+}
+
+.about ul li a:hover {
+    font-weight: bold;
+}
+
+.titfoot {
+    padding-bottom: 10px;
+}
+
+.about {
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+}
+
+.facebookicons {
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
+}
+
+.facebookicons a {
+    padding: 5px;
+    text-decoration: none;
+}
+
+.facebookicons a i {
+    width: 60px;
+    height: 60px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+}
+.facebookicons a i:hover {
+    background-color: #4786a2;
+}
+
+    </style>
+    <title>Eygpt Tour</title>
+</head>
+
+<body>
+    <!-- الناف بار -->
+    <header id="Home">
+        <div class="logo">
+            <i class="fa-sharp fa-solid fa-chart-pyramid"></i>
+            <a class="namelogo" href="#">Eygpt <span>Tours</span></a>
+        </div>
+
+        <nav class="navigation">
+            <a href="#Home" class="Home">Home</a>
+            <a href="#project" class="project">Project</a>
+            <a href="#map" class="map">Map</a>
+            <a href="#To communicate" class="To communicate">To communicate</a>
+        </nav>
+    </header>
+
+    <!-- الصوره -->
+    <section class="main">
+            <h2 class="namefoto">Discover the Best Egypt Tours</h2>
+    </section>
+
+    <section class="project-city">
+        <h3 class="title2">Marina Alamein:</h2>
+            <!-- مارينا  -->
+            <div class="content2">
+                <div class="project-card">
+                    <div class="pro-image">
+                        <img src="./images/northcoast1.jpg" width="300px" height="245px" alt="">
+                    </div>
+                    <div class="information">
+                        <p class="info_cat">The city of Alamein is one of the cities of Matrouh province and its name is known in most  countriesof the world, especially those that participated in World War II. On its land, the battle of Alamein took place, which is one of the most famous battles of World War II between the Allied countries and Axis countries, in which German forces were defeated.The city of Al Alamein is located east of the city of Marsa Matrouh and west of the city of Alexandria, and has a population of approximately 10,922 people.The city is divided into three main areas: El Alamein, Sidi Abdel Rahman village and Tel Al-Eis village</p>
+                        <strong class="project-tittle">
+                            <span>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </span>
+                        </strong>
+                    </div>
+                </div>
+    </section> 
+    
+    <section class="map">
+        <div class="mapsharm">
+            <a href="https://www.google.com/maps/place/%D9%82%D8%B1%D9%8A%D8%A9+%D9%85%D8%A7%D8%B1%D9%8A%D9%86%D8%A7+%D8%A7%D9%84%D8%B3%D8%A7%D8%AD%D9%84+%D8%A7%D9%84%D8%B4%D9%85%D8%A7%D9%84%D9%8A%E2%80%AD/@30.8512517,28.9664468,16.5z/data=!4m20!1m10!3m9!1s0x145fedf0f6120207:0x390b26abcc8c518f!2z2YLYsdmK2Kkg2YXYp9ix2YrZhtinINin2YTYs9in2K3ZhCDYp9mE2LTZhdin2YTZig!5m2!4m1!1i2!8m2!3d30.851088!4d28.966375!16s%2Fg%2F1ptx5r1_s!3m8!1s0x145fedf0f6120207:0x390b26abcc8c518f!5m2!4m1!1i2!8m2!3d30.851088!4d28.966375!16s%2Fg%2F1ptx5r1_s?entry=ttu"><img src="./المدن/المدن/مارينا.jpg" width="1000px" height="900px" alt="" style="margin-left: 260px;"></a>
+        </div>
+    </section>
+    
+
+    <!-- fotter__________________________ -->
+
+    <footer class="foot">
+        <div class="footer">
+            <div class="about">
+                <h3 class="titfoot">ABOUT US</h3>
+                <ul>
+                    <li><a href="https://www.tours4fun.com/about_us.html">About Tours4fun</a></li>
+                    <li><a href="https://www.tours4fun.com/about_us.html">Careers</a></li>
+                    <li><a href="https://www.tours4fun.com/about_us.html">Brand Ambassador</a></li>
+                    <li><a href="https://www.tours4fun.com/about_us.html">Travel Blog</a></li>
+                    <li><a href="https://www.tours4fun.com/about_us.html">Rewards4fun</a></li>
+                    <li><a href="https://www.tours4fun.com/about_us.html">Reviews</a></li>
+                    <li><a href="https://www.tours4fun.com/about_us.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+    
+            <div class="about">
+                <h3 class="titfoot">ABOUT US</h3>
+                <ul>
+                    <li><a href="https://www.tours4fun.com/about_us.html">About Tours4fun</a></li>
+                    <li><a href="https://www.tours4fun.com/about_us.html">Careers</a></li>
+                    <li><a href="https://www.tours4fun.com/about_us.html">Brand Ambassador</a></li>
+                    <li><a href="https://www.tours4fun.com/about_us.html">Travel Blog</a></li>
+                    <li><a href="https://www.tours4fun.com/about_us.html">Rewards4fun</a></li>
+                    <li><a href="https://www.tours4fun.com/about_us.html">Reviews</a></li>
+                    <li><a href="https://www.tours4fun.com/about_us.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+    
+            <div class="about">
+                <h3 class="titfoot">ABOUT US</h3>
+                <ul>
+                    <li><a href="https://www.tours4fun.com/about_us.html">About Tours4fun</a></li>
+                    <li><a href="https://www.tours4fun.com/about_us.html">Careers</a></li>
+                    <li><a href="https://www.tours4fun.com/about_us.html">Brand Ambassador</a></li>
+                    <li><a href="https://www.tours4fun.com/about_us.html">Travel Blog</a></li>
+                    <li><a href="https://www.tours4fun.com/about_us.html">Rewards4fun</a></li>
+                    <li><a href="https://www.tours4fun.com/about_us.html">Reviews</a></li>
+                    <li><a href="https://www.tours4fun.com/about_us.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        
+
+        <div class="facebookicons">
+            <a href="#"><i class="fab fa-linkedin" style="color: rgb(56, 163, 221);"></i></a>
+            <a href="#"><i class="fab fa-twitter" style="color: rgba(46, 149, 186, 0.827);"></i></a>
+            <a href="#"><i class="fab fa-instagram" style="color: blueviolet;"></i></a>
+            <a href="#"><i class="fab fa-youtube" style="color: red;"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
